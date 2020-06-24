@@ -1,0 +1,180 @@
+@font-face {
+    src:  url(../fonts/Montserrat/Montserrat-Regular.ttf) format('truetype');
+    font-family: Montserrat;
+}
+@font-face {
+    src:  url(../fonts/BodoniXT.ttf) format('truetype');
+    font-family: BodoniXT;
+}
+
+html,
+body  {
+    font-family: 'Montserrat','Verdana';
+    scroll-behavior: smooth;
+    width: 100%;
+    height: 100%;
+    margin: 0px auto;
+    padding: 0px;
+    overflow-x: hidden;  
+}
+h1 {
+    font-family: 'BodoniXT';
+}
+@media (max-width: 992px) {
+    .mobileMenu {
+      -webkit-transform: translateX(-100%);
+              transform: translateX(-100%);
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      left: 0;
+      -webkit-transition: all ease-in-out 0.45s;
+      transition: all ease 0.25s;
+      background-color: #D1BA71 !important;
+    }
+    .mobileMenu.onRight {
+      left: auto;
+      right: 0;
+      -webkit-transform: translateX(100%);
+              transform: translateX(100%);
+    }
+    .mobileMenu.open {
+      -webkit-transform: translateX(0%);
+              transform: translateX(0%);
+              
+    }
+    .mobileMenu .navbar-nav {
+      overflow-y: auto;
+      
+    }
+    .overlay {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      background-color: rgba(0, 0, 0, 0.5);
+      display: none;
+    }
+    .overlay.open {
+      display: block;
+      z-index: 1029;
+    }
+  }
+.navbar {
+    background-color: #000 !important;
+}
+#navbarSupportedContent {
+    background-color: #000 !important;
+}
+
+.nav-link:hover {
+    color: #D1BA71 !important;
+    border-bottom: 1px solid #D1BA71;
+    background-color:  rgba(172, 164, 154, 0.336);
+    transition: all ease-in 0.25s;
+    transform: translateY(-1px);
+}
+
+.jumbotron {
+    background: url(..//img/skyscrapper.jpg);
+    background-position:  center;
+    background-size:  cover;
+    background-repeat:  no-repeat;
+    height: 700px;
+}
+.jumbotron img {
+    width: 100%;
+    height: 400px;
+}
+.btn {
+    height: auto;
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    border-radius: 6px;
+    box-shadow: none;
+    outline: none !important;
+
+}
+.btn:hover {
+    color: #D1BA71;
+    background-color: rgb(17, 17, 17);
+}
+.btn:active {
+    background-color: #fff;
+    outline: #D1BA71 !important;
+    box-shadow: none !important;
+    max-width: 95%;
+    height: 95%;
+    transition: all ease-in 0.25s;
+    transform:  translateY(3.5px);
+    color: #000 !important;
+}
+.p-5 {
+    margin: 10px;
+    background-color: #fff;
+    max-width: 350px;
+    background-image: transparent !important;
+    font-weight:  bold;
+    
+}
+.p-5:hover {
+    width: 120%;
+    transition: all width ease-in 0.25s;
+    transform:  translateY(-2px);
+    border: 1px solid #D1BA71;
+    cursor:  pointer;
+}
+#strategy {
+    background-image: url(../img/lowimg.jpg);
+    background-position:  center;
+    background-size:  cover;
+    padding-top: 60px !important;
+}
+.flex-item {
+    width: 200px;
+    height: 300px;
+}
+#values {
+    padding: 60px 40px 0px;
+}
+#cardpic {
+    background-image: url(../img/favicon.png);
+    background-position:  center;
+    background-size:  cover;
+}
+#contact {
+    margin-top: 150px;
+    background-color: #000;
+    max-height: 1500px;
+    color: #fff;
+}
+#inquire a{
+    color: #fff;
+    text-decoration:  none;
+}
+#inquire a:hover {
+    color: #D1BA71;
+}
+@media all and (max-width: 576px) {
+    #home img {
+    height: 400px;
+    }
+    #abticon {
+    height: 70% !important;
+    width: 60% !important;
+    }
+    #foundation {
+    height: 70% !important;
+    width: 60% !important;
+    }
+    #chart {
+    height: 70% !important;
+    width: 60% !important;
+    }
+    #cardpic {
+    height: 200px !important;
+    }
+}
