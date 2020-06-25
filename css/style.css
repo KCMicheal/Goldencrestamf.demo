@@ -79,7 +79,7 @@ h1 {
 }
 
 .jumbotron {
-    background: url(..//img/skyscrapper.jpg);
+    background: url(..//img/13.jpg);
     background-position:  center;
     background-size:  cover;
     background-repeat:  no-repeat;
@@ -128,8 +128,8 @@ h1 {
     cursor:  pointer;
 }
 #strategy {
-    background-image: url(../img/lowimg.jpg);
-    background-position:  center;
+    background-image: url(../img/14.jpg);
+    background-position:  bottom;
     background-size:  cover;
     padding-top: 60px !important;
 }
@@ -137,19 +137,49 @@ h1 {
     width: 200px;
     height: 300px;
 }
+.col-md-8 {
+    background-color: rgb(41, 41, 65) !important;
+    color: #fff !important;
+}
 #values {
     padding: 60px 40px 0px;
 }
-#cardpic {
-    background-image: url(../img/favicon.png);
+#entre {
+    background-image: url(../img/4.jpg);
+    background-position:  center;
+    background-size:  cover;
+}
+#team {
+    background-image: url(../img/10.jpg);
+    background-position:  center;
+    background-size:  cover;
+}
+#social {
+    background-image: url(../img/8.jpg);
+    background-position:  center;
+    background-size:  cover;
+}
+#rela {
+    background-image: url(../img/18.jpg);
+    background-position:  center;
+    background-size:  cover;
+}
+#excel {
+    background-image: url(../img/17.jpg);
+    background-position:  center;
+    background-size:  cover;
+}
+#strat {
+    background-image: url(../img/2.jpg);
     background-position:  center;
     background-size:  cover;
 }
 #contact {
     margin-top: 150px;
     background-color: #000;
-    max-height: 1500px;
+    max-height: 1700px;
     color: #fff;
+    word-wrap: break-word;
 }
 #inquire a{
     color: #fff;
@@ -160,7 +190,9 @@ h1 {
 }
 @media all and (max-width: 576px) {
     #home img {
-    height: 400px;
+    height: 200px;
+    margin-top: 60px;
+    margin-bottom: 30px !important;
     }
     #abticon {
     height: 70% !important;
@@ -174,7 +206,8 @@ h1 {
     height: 70% !important;
     width: 60% !important;
     }
-    #cardpic {
+    .cardpic {
     height: 200px !important;
     }
+    
 }
