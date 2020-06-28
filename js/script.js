@@ -22,3 +22,18 @@ $(window).scroll(function() {
 $('.navbar-nav>li>a').on('click', function() {
   $('.navbar-collapse').collapse('hide');
 });
+
+var btn = $('#button');
+
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 700) {
+    btn.addClass('show');
+  } else {
+    btn.removeClass('show');
+  }
+});
+
+btn.on('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0}, '700');
+});

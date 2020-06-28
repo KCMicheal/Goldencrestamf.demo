@@ -79,11 +79,9 @@ h1 {
 }
 
 .jumbotron {
-    background: url(..//img/13.jpg);
-    background-position:  center;
-    background-size:  cover;
-    background-repeat:  no-repeat;
+    background-color: #23234E;
     height: 700px;
+    margin-bottom: 0px !important;
 }
 .jumbotron img {
     width: 100%;
@@ -111,6 +109,45 @@ h1 {
     transition: all ease-in 0.25s;
     transform:  translateY(3.5px);
     color: #000 !important;
+}
+#button {
+    display: inline-block;
+    background-color: #D1BA71;
+    width: 50px;
+    height: 50px;
+    text-align:  center;
+    border-radius: 50%;
+    position:  fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s, opacity .5s, visibility 1s;
+    opacity: 0;
+    visibility:  hidden;
+    z-index: 1000;
+}
+#button::after {
+    content: "\f077";
+    color: #fff;
+    font-family: FontAwesome;
+    font-size: 2em;
+    line-height: 50px;
+}
+#button:active {
+    background-color: #555;
+}
+#button.show {
+    opacity: 1;
+    visibility:  visible;
+}
+.building {
+    min-height: 600px;
+    background-image: url(../img/13.jpg);
+    background-position:  center;
+    background-size:  cover;
+    background-repeat:  no-repeat;    
+}
+.leadtext {
+    z-index: 1;
 }
 .p-5 {
     margin: 10px;
@@ -191,8 +228,12 @@ h1 {
 @media all and (max-width: 576px) {
     #home img {
     height: 200px;
-    margin-top: 60px;
+    margin-top: 120px;
     margin-bottom: 30px !important;
+    }
+    .building p {
+    font-size:25px !important;
+    line-height: 40px !important;
     }
     #abticon {
     height: 70% !important;
