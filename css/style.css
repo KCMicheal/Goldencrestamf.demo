@@ -11,8 +11,6 @@ html,
 body  {
     font-family: 'Montserrat','Verdana';
     scroll-behavior: smooth;
-    width: 100%;
-    height: 100%;
     margin: 0px auto;
     padding: 0px;
     overflow-x: hidden;  
@@ -79,7 +77,7 @@ h1 {
 }
 
 .jumbotron {
-    background-color: #23234E;
+    background-color: #fff;
     height: 700px;
     margin-bottom: 0px !important;
 }
@@ -116,7 +114,7 @@ h1 {
     width: 50px;
     height: 50px;
     text-align:  center;
-    border-radius: 50%;
+    border-radius: 8px;
     position:  fixed;
     bottom: 30px;
     right: 30px;
@@ -131,6 +129,12 @@ h1 {
     font-family: FontAwesome;
     font-size: 2em;
     line-height: 50px;
+    font-weight: normal;
+    font-style:  normal;
+}
+#button:hover {
+    cursor: pointer;
+    background-color: rgba(209, 187, 113, 0.836);
 }
 #button:active {
     background-color: #555;
@@ -175,42 +179,33 @@ h1 {
     height: 300px;
 }
 .col-md-8 {
-    background-color: rgb(41, 41, 65) !important;
-    color: #fff !important;
+    background-color: rgb(255, 255, 255) !important;
+    color: #000 !important;
 }
 #values {
     padding: 60px 40px 0px;
 }
-#entre {
-    background-image: url(../img/4.jpg);
-    background-position:  center;
-    background-size:  cover;
+.cbody {
+    min-height: 355px;
+    box-shadow: 0px 0px 19px rgb(173, 168, 168);
+    outline: none !important;
+    border: none !important;
+    padding-top: 50px;
 }
-#team {
-    background-image: url(../img/10.jpg);
-    background-position:  center;
-    background-size:  cover;
+.accordion a{
+    text-decoration: none !important;
+    color: #000 !important;
+    border: transparent !important;
+    outline: none !important;
+    outline-color: transparent !important;
 }
-#social {
-    background-image: url(../img/8.jpg);
-    background-position:  center;
-    background-size:  cover;
+.accordion a:hover {
+    color: #D1BA71 !important;
 }
-#rela {
-    background-image: url(../img/18.jpg);
-    background-position:  center;
-    background-size:  cover;
+.card-header {
+    background: transparent !important;    
 }
-#excel {
-    background-image: url(../img/17.jpg);
-    background-position:  center;
-    background-size:  cover;
-}
-#strat {
-    background-image: url(../img/2.jpg);
-    background-position:  center;
-    background-size:  cover;
-}
+
 #contact {
     margin-top: 150px;
     background-color: #000;
@@ -246,9 +241,6 @@ h1 {
     #chart {
     height: 70% !important;
     width: 60% !important;
-    }
-    .cardpic {
-    height: 200px !important;
     }
     
 }

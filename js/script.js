@@ -26,14 +26,14 @@ $('.navbar-nav>li>a').on('click', function() {
 var btn = $('#button');
 
 $(window).scroll(function() {
-  if ($(window).scrollTop() > 700) {
+  if ($(window).scrollTop() > 900) {
     btn.addClass('show');
   } else {
     btn.removeClass('show');
   }
 });
 
-btn.on('click', function(e) {
+btn.on('click', function(e) { 
   e.preventDefault();
-  $('html, body').animate({scrollTop:0}, '700');
+  $('html, body').animate({scrollTop:0}, '900');
 });
