@@ -23,17 +23,12 @@ $('.navbar-nav>li>a').on('click', function() {
   $('.navbar-collapse').collapse('hide');
 });
 
-var btn = $('#button');
+const scrollUp = document.querySelector('.scrollUp');
 
-$(window).scroll(function() {
-  if ($(window).scrollTop() > 900) {
-    btn.addClass('show');
+window.addEventListener('scroll', () => {
+  if (window.pageYOffset > 1300) {
+    scrollUp.classList.add("active");
   } else {
-    btn.removeClass('show');
+    scrollUp.classList.remove("active");
   }
-});
-
-btn.on('click', function(e) { 
-  e.preventDefault();
-  $('html, body').animate({scrollTop:0}, '900');
 });
